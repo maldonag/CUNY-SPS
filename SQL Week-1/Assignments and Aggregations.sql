@@ -3,10 +3,10 @@
 Show the SQL query(s) that support your conclusion. 
 */
 
-#Answer:
+# Answer:
 -- Destination AIH with a distance of 4983.
 
--- Query:
+# Query:
 SELECT dest, Max(distance) 
 FROM flights.flights;
 
@@ -19,7 +19,6 @@ Show the SQL statement(s) that support your result.
 -- Number of different engines in the planes table is 6. Of the 6 engines, aircrafts with the most seats are AT-5, 150, EMB-145XR, 757-224, E-90, S-76A.
 
 # Query:
-
 SELECT tailnum, model, Max(seats), engine 
 FROM flights.planes
 GROUP BY engine;
@@ -72,7 +71,7 @@ LIMIT 5;
 7.	Show only the top 5 airlines, by number of flights of distance 1,000 miles or greater, ordered by number of flights in descending order.
 */ 
 
-#Query:
+# Query:
 SELECT flights.airlines.carrier, flights.airlines.name , flights.flights.flight, flights.flights.distance
 FROM flights.airlines
 INNER JOIN flights.flights ON airlines.carrier = flights.carrier
