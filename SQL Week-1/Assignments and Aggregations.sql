@@ -36,8 +36,10 @@ FROM flights.flights;
 
 /* 
 4.	Show the total number of flights by airline (carrier). 
-Total number of flights by carrier is  The total number of flights by carrier is 16
 */
+
+# Answer:
+-- Total number of flights by carrier is  The total number of flights by carrier is 16
 
 # Query:
 SELECT count(carrier) FROM flights.airlines;
