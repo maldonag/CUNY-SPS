@@ -1,0 +1,52 @@
+---
+title: "R Bridge Week 1 Assignment"
+author: "Gabriel Maldonado"
+date: "7/18/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Please create the following exercises in .rmd format, publish to rpub and submit both the .rmd file and the rpub link.
+
+
+
+1. Write a loop that calculates 12-factorial  
+```{r}
+
+v <- 12
+res <- 1
+while (v != 1) {
+res <- res * v
+   	v <- v - 1
+   	print(res)
+}
+
+```
+
+2.	Show how to create a numeric vector that contains the sequence from 20 to 50 by 5.  
+```{r}
+seq(from=20, to=50, by=5)
+```
+
+3.	Create the function “quadratic” that takes a trio of input numbers a, b, and c and solve the quadratic equation. The function should print as output the two solutions. 
+```{r}
+# Solve: 5x^2 + 6x + 1 = 0
+
+quadratic <-function(a, b, c) {
+  #quadratic formula
+  D = (b*b - 4*a*c)**0.5
+  x_1 = (-b + D)/(2*a)
+  x_2 = (-b - D)/(2*a)
+  
+  paste("Answer: x=", x_1, "or x=", x_2)
+}
+
+quadratic(5,6,1)
+
+```
+
+
