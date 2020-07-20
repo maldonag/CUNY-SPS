@@ -86,7 +86,6 @@ LIMIT 5;
 and write down both the question, and the query that answers the question. 
 */
 
-# 2.	What are the different numbers of engines in the planes table?  For each number of engines, which aircraft have the most number of seats?  
 # Question: Show only the top 5 airlines that have the most air time in descending order.
 
 
