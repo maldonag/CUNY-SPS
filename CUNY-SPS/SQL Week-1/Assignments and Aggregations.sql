@@ -44,7 +44,6 @@ FROM flights.flights;
 # Query:
 SELECT count(carrier) FROM flights.airlines;
 
-
 /*
 5.	Show all of the airlines, ordered by number of flights in descending order.
 */
@@ -85,7 +84,16 @@ LIMIT 5;
 /*
 8.	Create a question that (a) uses data from the flights database, and (b) requires aggregation to answer it, 
 and write down both the question, and the query that answers the question. 
-/*
+*/
+
+# 2.	What are the different numbers of engines in the planes table?  For each number of engines, which aircraft have the most number of seats?  
+# Question: Show only the top 5 airlines that have the most air time in descending order.
+
 
 #Query:
-
+SELECT flights.airlines.carrier, flights.airlines.name, Max(flights.flights.air_time)
+FROM flights.airlines
+INNER JOIN flights.flights ON airlines.carrier = flights.carrier
+GROUP BY flights.airlines.carrier
+Order by flights.flights.air_time DESC
+LIMIT 5;
