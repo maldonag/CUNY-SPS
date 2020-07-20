@@ -89,7 +89,7 @@ and write down both the question, and the query that answers the question.
 # Question: Show only the top 5 airlines that have the most airtime in descending order.
 
 
-#Query:
+# Query:
 SELECT flights.airlines.carrier, flights.airlines.name, Max(flights.flights.air_time)
 FROM flights.airlines
 INNER JOIN flights.flights ON airlines.carrier = flights.carrier
