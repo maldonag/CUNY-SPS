@@ -86,7 +86,7 @@ LIMIT 5;
 and write down both the question, and the query that answers the question. 
 */
 
-# Question: Show only the top 5 airlines that have the most air time in descending order.
+# Question: Show only the top 5 airlines that have the most airtime in descending order.
 
 
 #Query:
